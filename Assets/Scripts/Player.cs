@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
     }
 
 
-    Collider2D[] groundCol = Physics2D.OverlapCircleAll(footCollider.position, 0.4f, walkableMask);
+    Collider2D[] groundCol = Physics2D.OverlapCircleAll(footCollider.position, 0.28f, walkableMask);
 
     isGrounded = false;
     foreach (Collider2D col in groundCol)
